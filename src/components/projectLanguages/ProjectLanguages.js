@@ -26,6 +26,7 @@ function ProjectLanguages(props) {
                     className="iconify"
                     data-icon={logo.iconifyClass}
                     data-inline="false"
+                    style={{ color: logo.color }}
                   ></span>
                 </li>
               </OverlayTrigger>

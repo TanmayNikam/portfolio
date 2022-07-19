@@ -2,14 +2,14 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import BlogsImg from "./BlogsImg";
+// import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
+// const blogSection = contactPageData.blogSection;
 
 function Contact(props) {
   const theme = props.theme;
@@ -26,14 +26,15 @@ function Contact(props) {
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-contact">
         <Fade bottom duration={1000} distance="40px">
-          <div className="contact-heading-div">
-            <div className="contact-heading-img-div">
+          {/* className="contact-heading-div" */}
+          <div>
+            {/* <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                 alt=""
               />
-            </div>
+            </div> */}
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
@@ -53,29 +54,6 @@ function Contact(props) {
               <a {...styles} className="general-btn" href={greeting.resumeLink}>
                 See my Resume
               </a>
-            </div>
-          </div>
-        </Fade>
-        <Fade bottom duration={1000} distance="40px">
-          <div className="blog-heading-div">
-            <div className="blog-heading-text-div">
-              <h1 className="blog-heading-text" style={{ color: theme.text }}>
-                {blogSection["title"]}
-              </h1>
-              <p
-                className="blog-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {blogSection["subtitle"]}
-              </p>
-              <div className="blogsite-btn-div">
-                <a {...styles} className="general-btn" href={blogSection.link}>
-                  My Medium Profile
-                </a>
-              </div>
-            </div>
-            <div className="blog-heading-img-div">
-              <BlogsImg theme={theme} />
             </div>
           </div>
         </Fade>

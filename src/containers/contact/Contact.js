@@ -4,6 +4,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { contactInfo } from "../../portfolio";
 
 export default function Contact() {
+  console.log(contactInfo);
   return (
     <div className="main contact-margin-top" id="contact">
       <div className="contact-div-main">

@@ -1,7 +1,6 @@
 {
   "private": true,
-  "name": "opportfolio",
-  "homepage": "http://hrishi.tech/",
+  "name": "tanmay-portfolio",
   "version": "1.2.0",
   "scripts": {
     "build": "react-scripts build",

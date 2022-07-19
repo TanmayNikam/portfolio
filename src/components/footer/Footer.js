@@ -1,17 +1,19 @@
 import React from "react";
 import "./Footer.css";
+// eslint-disable-next-line no-unused-vars
 import { Fade } from "react-reveal";
+// eslint-disable-next-line no-unused-vars
 import { greeting } from "../../portfolio.js";
 /* eslint-disable jsx-a11y/accessible-emoji */
 
 export default function Footer(props) {
   return (
     <div className="footer-div">
-      <Fade>
+      {/* <Fade>
         <p className="footer-text" style={{ color: props.theme.secondaryText }}>
           Made with <span role="img">❤️</span> by {greeting.title2}
         </p>
-      </Fade>
+      </Fade> */}
     </div>
   );
 }
